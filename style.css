@@ -1,0 +1,75 @@
+body {
+  background-color: #202020;
+  font-family: 'Almarai', sans-serif;
+  color: white;
+}
+
+.TOP{
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h5{
+  display: inline-block;
+}
+
+.jumbotron{
+  max-width: 750px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+    height: 4px;
+
+    background: #ddd;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #343a40;
+    margin-top: -4px;
+}
+.mr-2, .mx-2 {
+    margin-left: 0 !important;
+}
+.ml-2, .mx-2 {
+    margin-right: 0 !important;
+}
+.spaces {
+    margin: 0 10px !important;
+}
+div#main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "engine panel";
+}
+.left {
+  grid-area: panel;
+}
+.right {
+  grid-area: engine;
+}
+.controller{
+  margin-top: 50px;
+}
+.on-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 660px) {
+div#main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+    grid-template-areas:
+        "panel"
+        "engine";
+}
